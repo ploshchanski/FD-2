@@ -65,7 +65,4 @@ class HashStorageFunc{
         }else{
             alert(list);
         }
-        
-    
     }
-    //lololo
