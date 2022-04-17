@@ -1,0 +1,24 @@
+.label{
+    display: inline-block;
+    width: 150px;
+}
+.longtext{
+    width: 450px; 
+}
+.shorttext{
+    width: 200px;
+}
+.number{
+    width: 100px; 
+}
+.memo{
+    display: block;
+    width: 600px;
+    height: 100px;
+}
+.inputWrap{
+    display: inline-block;
+}
+.ta{
+    display: block;
+}
