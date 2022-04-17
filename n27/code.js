@@ -157,11 +157,3 @@ function submitCheck(eo) {
         eo.preventDefault();
     }
 }
-visitorsValid();
-sitenameValid();
-siteurlValid();
-emailValid();
-votesValid();
-divisionValid();
-descriptionValid();
-validRadio();
