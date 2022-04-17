@@ -14,22 +14,22 @@
         <label for="sitename">
             <div class="label">Название сайта:</div>
             <input type="text" id="sitename"  name="sitename"class="longtext">
-            <span id="errsitename"></span></><br>
+            <span id="errsitename" style="color: red;"></span></><br>
         </label>
         <label for="siteurl">
             <div class="label">URL сайта:</div>
             <input type="text" id="siteurl" name="siteurl" class="longtext">
-            <span id="errsiteurl"></span><br>
+            <span id="errsiteurl" style="color: red;"></span><br>
         </label>
         <label for="visitors">
             <div class="label">Посетителей в сутки:</div>
             <input type="number" id="visitors" name="visitors" class="number">
-            <span id="errvisitors"></span><br>
+            <span id="errvisitors" style="color: red;"></span><br>
         </label>
         <label for="email">
             <div class="label">E-mail для связи:</div>
             <input type="text" id="email" name="email" class="shorttext">
-            <span id="erremail"></span><br>
+            <span id="erremail" style="color: red;"></span><br>
         </label>
         <label for="division">
             <div class="label">Рубрика каталога:</div>
@@ -37,7 +37,7 @@
                 <option value="1">здоровье</option>
                 <option value="2">домашний уют</option>
                 <option value="3">бытовая техника</option>
-            </select><span id="errdivision"></span><br>
+            </select><span id="errdivision" style="color: red;"></span><br>
         </label>
         <label for="payment">
             <div class="label">Размещение:</div>
@@ -46,19 +46,19 @@
             <input type="radio" class="radio" name="payment" value="2">
             <label>платное</label><input type="radio" class="radio"name="payment" value="3">
             <label>VIP</label>
-            <span id="errpayment"></span><br>
+            <span id="errpayment" style="color: red;"></span><br>
         </label>
         <label for="votes" id="labvot">
             <div class="label">Разрешить отзывы:</div>
             <input type="checkbox" tabindex="0" id="votes" name="votes" class="check">
-            <span id="errvotes"></span><br>
+            <span id="errvotes" style="color: red;"></span><br>
         </label>
         <label for="description">
             <div class="label">Описание сайта:</div>
         </label>
         <div class="ta"><textarea id="description" name="description" class="memo"></textarea>
-            <span id="errdescription"></span></div>
-        <div><input type="submit" id="submit" value="Опубликовать" class="submit"><span class="errsubmit"></span>
+            <span id="errdescription" style="color: red;"></span></div>
+        <div><input type="submit" id="submit" value="Опубликовать" class="submit" ><span class="errsubmit"></span>
         </div>
     </form>
     <script src="code.js"></script>
