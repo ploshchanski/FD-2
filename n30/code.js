@@ -1,10 +1,10 @@
-let x = [];
-let y = [];
+
 
 window.addEventListener("load",(eo)=> {
     eo = eo || window.event;
     let img = document.getElementsByTagName('IMG');
-
+    const x = [];
+    const y = [];
     for (let i = 0; i < img.length; i++) {
         x.push(img[i].offsetLeft);
         y.push(img[i].offsetTop);
