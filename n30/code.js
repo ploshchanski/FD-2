@@ -25,24 +25,26 @@ for (let i = 0; i < img.length; i++) {
 
 function dragStart(eo) {
     eo = eo || window.event;
-    let img = eo.target;
-    let shiftX = eo.clientX - img.getBoundingClientRect().left; //eo.clientX - х курс. img.getBoundingClientRect().left - позиция элем. shiftX - от курс. до края 
-    let shiftY = eo.clientY - img.getBoundingClientRect().top;
-    document.body.appendChild(img);
+    let self = this;
+    let shiftX = eo.clientX - self.getBoundingClientRect().left; //eo.clientX - х курс. img.getBoundingClientRect().left - позиция элем. shiftX - от курс. до края 
+    let shiftY = eo.clientY - self.getBoundingClientRect().top;
+    document.body.appendChild(self);
+
+
     function dragDrop(pageX, pageY) {
-        img.style.left = `${pageX - shiftX}px`;
-        img.style.top = `${pageY - shiftY}px`;
+        self.style.left = `${pageX - shiftX}px`;
+        self.style.top = `${pageY - shiftY}px`;
 
     }
     function dragMove(eo) {
         dragDrop(eo.pageX, eo.pageY);
     }
     document.addEventListener('mousemove', dragMove);
-    img.addEventListener('mouseup', dragEnd);
+    self.addEventListener('mouseup', dragEnd);
     function dragEnd() {
         document.removeEventListener('mousemove', dragMove);
     };
-    img.ondragstart = function () {
+    self.ondragstart = function () {
         return false;
     };
 
