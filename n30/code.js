@@ -18,7 +18,6 @@ function dragStart(eo) {
     let img = eo.target;
     let shiftX = eo.clientX - img.getBoundingClientRect().left; //eo.clientX - х курс. img.getBoundingClientRect().left - позиция элем. shiftX - от курс. до края 
     let shiftY = eo.clientY - img.getBoundingClientRect().top;
-    console.log(img.getBoundingClientRect().left)
     document.body.appendChild(img);
     function dragDrop(pageX, pageY) {
         img.style.left = `${pageX - shiftX}px`;
