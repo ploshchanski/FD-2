@@ -1,6 +1,10 @@
-let img = document.getElementsByTagName('IMG');
 let x = [];
 let y = [];
+
+window.addEventListener("load", function(eo) {
+    eo = eo || window.event;
+let img = document.getElementsByTagName('IMG');
+
 for (let i = 0; i < img.length; i++) {
     x.push(img[i].offsetLeft);
     y.push(img[i].offsetTop);
@@ -13,6 +17,12 @@ for (let i = 0; i < img.length; i++) {
     imgItem.addEventListener('mousedown', dragStart);
 
 }
+
+    console.log("All resources finished loading!");
+  });
+
+
+
 function dragStart(eo) {
     eo = eo || window.event;
     let img = eo.target;
