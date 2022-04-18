@@ -1,7 +1,7 @@
 let x = [];
 let y = [];
 
-window.addEventListener("load", function (eo) {
+window.addEventListener("load",(eo)=> {
     eo = eo || window.event;
     let img = document.getElementsByTagName('IMG');
 
