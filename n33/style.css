@@ -1,0 +1,25 @@
+.clock {
+    background: #E1B16A;
+    border-radius: 50%;
+}
+
+.clockLabel {
+    background: #78A5A3;
+    border-radius: 50%;
+}
+
+.LabelNum {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.arrow{
+    background: #444C5C; 
+    border: 1px solid rgb(138, 138, 138);
+}
+.digTime{
+    color:#444C5C;
+    text-align: center;
+}
